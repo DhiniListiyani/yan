@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dhini Listiyani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="wp2.jpg" alt="Main Image" class="hero-image">
+        <div class="hero-text">
+            <h1>Dhini Listiyani</h1>
+            <p>Welcome to My Portfolio</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <!-- Profile Picture -->
+        <img src="dhin.jpg" alt="Your Name" class="profile-picture">
+        
+        <!-- Biodata -->
+        <div class="biodata">
+            <p>Hello! I'm <strong>Dhini Listiyani,</strong> I am a student at Pamulang University. Informatics engineering study program. Faculty of computer science</p>
+            <ul>
+                <li><strong>Name:</strong> Dhini Listiyani</li>
+                <li><strong>Age:</strong> 20</li>
+                <li><strong>Email:</strong> dhinilistiyanii2019@gmail.com</li>
+                <li><strong>Location:</strong> Pondok Aren, Tangerang Selatan</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <!-- Skill HTML -->
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;">50%</div>
+            </div>
+        </div>
+
+        <!-- Skill CSS -->
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 40%;">40%</div>
+            </div>
+        </div>
+
+        <!-- Skill JavaScript -->
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 35%;">35%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- sertifikat Section -->
+<section id="sertifikat" class="sertifikat">
+    <h2>My sertifikat</h2>
+        <div class="sertifikat-container">
+            <div class="certificate-item">
+            <img src="introduction to HTML.png" alt="Introduction to HTML" class="sertifikat-img" onclick="openModal(this)">
+        </div>
+        <div class="certificate-item">
+            <img src="introduction to CSS.png" alt="Introduction to CSS" class="sertifikat-img" onclick="openModal(this)">
+        </div>
+        <div class="certificate-item">
+           <img src="introduction to JavaScript.png" alt="Introduction to JavaScript" class="sertifikat-img" onclick="openModal(this)">
+        </div>
+        </div> 
+        
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">           
+            <div class="project">
+                <a href="https://dhinilistiyani.github.io/Form-Login/" target="_blank">
+                    <img src="formlogin.png" alt="Project 1">
+                </a>
+                <p>Project 1: Login Form</p>
+            </div>
+            <div class="project">
+                <a href="https://dhinilistiyani.github.io/niy/" target="_blank">
+                    <img src="portofolio.png" alt="Project 2">
+                </a>
+                <p>Project 2: portofolio</p>
+            </div>
+            <div class="project">
+                <a href="https://dhinilistiyani.github.io/Calculator//" target="_blank">
+                    <img src="kalkulator1.png" alt="Project 3">
+                </a>
+                <p>Project 3: Calculator</p>
+            </div>
+            <div class="project">
+                <a href="https://dhinilistiyani.github.io/dashboard-admin/" target="_blank">
+                    <img src="dashboardadmin.png" alt="Project 3">
+                </a>
+                <p>Project 4: Dashboard Admin</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaboration or any queries.</p>
+        <a href="mailto:dhinilistiyanii2019@gmail.com">dhinilistiyanii2019@gmail.com</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dhini Listiyani. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk membuka modal
+        function openModal(element) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImage");
+            var captionText = document.getElementById("caption");
+    
+            modal.style.display = "block";
+            modalImg.src = element.src; // Menampilkan gambar yang diklik
+            captionText.innerHTML = element.alt; // Menampilkan caption gambar
+        }
+    
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
